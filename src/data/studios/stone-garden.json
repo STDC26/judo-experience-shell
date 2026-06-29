@@ -129,5 +129,12 @@
     "Strategic Ambiguity Scan",
     "Priority Focus Assessment"
   ],
-  "loopPreview": "Noise \u2192 Pattern \u2192 Clarity"
+  "loopPreview": "Noise \u2192 Pattern \u2192 Clarity",
+  "visual": {
+    "environmentImage": "/judo-experience-shell/studio-environments/stone-garden.jpg",
+    "alt": "Zen stone garden with circular arch opening, raked sand, and calm natural light",
+    "objectPosition": "center 40%",
+    "heroObjectPosition": "center 30%",
+    "motif": "garden-arch"
+  }
 }

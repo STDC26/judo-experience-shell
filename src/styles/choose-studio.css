@@ -71,7 +71,7 @@
   transform: translateY(-2px);
 }
 
-/* Image area — Studio environment visual layer */
+/* Image area — literal Studio environment */
 .choose-card-image {
   height: 200px;
   position: relative;
@@ -79,13 +79,41 @@
   background: var(--color-charcoal);
 }
 
-/* Base atmospheric gradient */
+.choose-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  filter: brightness(0.7) saturate(0.85);
+}
+
+.choose-card:hover .choose-card-img {
+  transform: scale(1.03);
+  filter: brightness(0.8) saturate(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .choose-card-img {
+    transition: none;
+  }
+  .choose-card:hover .choose-card-img {
+    transform: none;
+  }
+}
+
+/* Accent tint overlay — per-studio color wash */
 .choose-card-image::before {
   content: '';
   position: absolute;
   inset: 0;
-  opacity: 0.85;
-  transition: opacity 0.3s;
+  background: linear-gradient(
+    135deg,
+    var(--card-soft) 0%,
+    transparent 60%
+  );
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Readability overlay — fade to card background */
@@ -96,14 +124,11 @@
   background: linear-gradient(
     to bottom,
     transparent 20%,
-    rgba(43, 43, 43, 0.4) 60%,
+    rgba(43, 43, 43, 0.3) 55%,
     var(--color-graphite) 100%
   );
-  z-index: 1;
-}
-
-.choose-card:hover .choose-card-image::before {
-  opacity: 1;
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* ── Observatory: telescope / night horizon / signal arcs ── */

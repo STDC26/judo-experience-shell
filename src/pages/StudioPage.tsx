@@ -32,24 +32,35 @@ export function StudioPage() {
       )}
 
       <div className="studio-workspace">
-        {/* Hero */}
-        <div className="studio-hero" style={{ borderLeftColor: studio.accent.primary }}>
-          <div className="studio-hero-verb" style={{ color: studio.accent.primary }}>
-            {studio.verb}
-          </div>
-          <h1 className="studio-hero-title">{studio.name}</h1>
-          <p className="studio-hero-tagline">{studio.tagline}</p>
-          {studio.maturity === 'structural' && (
-            <span style={{
-              fontSize: 'var(--text-xs)',
-              color: 'var(--color-pending)',
-              fontStyle: 'italic',
-              marginTop: 'var(--space-sm)',
-              display: 'block',
-            }}>
-              Structural maturity — intentionally maturing
-            </span>
+        {/* Hero — literal Studio environment */}
+        <div className="studio-hero" style={{ '--hero-accent': studio.accent.primary } as React.CSSProperties}>
+          {studio.visual && (
+            <img
+              src={studio.visual.environmentImage}
+              alt={studio.visual.alt}
+              className="studio-hero-img"
+              style={{ objectPosition: studio.visual.heroObjectPosition || 'center center' }}
+            />
           )}
+          <div className="studio-hero-overlay" />
+          <div className="studio-hero-content">
+            <div className="studio-hero-verb" style={{ color: studio.accent.primary }}>
+              {studio.verb}
+            </div>
+            <h1 className="studio-hero-title">{studio.name}</h1>
+            <p className="studio-hero-tagline">{studio.tagline}</p>
+            {studio.maturity === 'structural' && (
+              <span style={{
+                fontSize: 'var(--text-xs)',
+                color: 'var(--color-pending)',
+                fontStyle: 'italic',
+                marginTop: 'var(--space-sm)',
+                display: 'block',
+              }}>
+                Structural maturity — intentionally maturing
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Workflow Rail */}

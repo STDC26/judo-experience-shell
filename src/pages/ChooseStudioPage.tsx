@@ -28,8 +28,18 @@ export function ChooseStudioPage() {
               '--card-soft': studio.accent.soft,
             } as React.CSSProperties}
           >
-            {/* Image area */}
-            <div className="choose-card-image" />
+            {/* Image area — literal Studio environment */}
+            <div className="choose-card-image">
+              {studio.visual && (
+                <img
+                  src={studio.visual.environmentImage}
+                  alt={studio.visual.alt}
+                  className="choose-card-img"
+                  style={{ objectPosition: studio.visual.objectPosition || 'center center' }}
+                  loading="lazy"
+                />
+              )}
+            </div>
 
             {/* Content */}
             <div className="choose-card-content">

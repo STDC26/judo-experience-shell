@@ -85,6 +85,14 @@ export interface Studio {
   recommendedStart?: boolean;
   recommendedStartLabel?: string;
   structuralNote?: string;
+  // JXS v1.1.3 — literal environment visual fields (static config only)
+  visual?: {
+    environmentImage: string;
+    alt: string;
+    objectPosition?: string;
+    heroObjectPosition?: string;
+    motif?: string;
+  };
 }
 
 // --- Brief interfaces (matches COND-05 / F-01 corrected schema) ---
