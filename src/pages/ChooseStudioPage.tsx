@@ -22,6 +22,7 @@ export function ChooseStudioPage() {
           <div
             key={studio.id}
             className="choose-card"
+            data-studio={studio.id}
             style={{
               '--card-accent': studio.accent.primary,
               '--card-soft': studio.accent.soft,
