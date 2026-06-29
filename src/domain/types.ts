@@ -78,6 +78,13 @@ export interface Studio {
   metrics: StudioMetric[];
   panels: StudioPanel[];
   integrationSlots: IntegrationSlot[];
+  // JXS v1.1.1 — use-case routing fields (static config only)
+  useCases?: string[];
+  exampleBriefs?: string[];
+  loopPreview?: string;
+  recommendedStart?: boolean;
+  recommendedStartLabel?: string;
+  structuralNote?: string;
 }
 
 // --- Brief interfaces (matches COND-05 / F-01 corrected schema) ---

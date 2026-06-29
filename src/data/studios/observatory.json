@@ -18,33 +18,144 @@
   "heroImageRef": "observatory-hero",
   "workflow": {
     "steps": [
-      { "id": "shape", "label": "SHAPE", "caption": "Frame the uncertainty.", "mapsToStage": "SHAPE" },
-      { "id": "align", "label": "ALIGN", "caption": "Scan the environment.", "mapsToStage": "ALIGN" },
-      { "id": "design", "label": "DESIGN", "caption": "Form emerging beliefs.", "mapsToStage": "DESIGN" },
-      { "id": "calibrate", "label": "CALIBRATE", "caption": "Qualify the intelligence.", "mapsToStage": "CALIBRATE" },
-      { "id": "activate", "label": "ACTIVATE", "caption": "Consider next moves.", "mapsToStage": "ACTIVATE" },
-      { "id": "learn", "label": "LEARN", "caption": "Capture learnings.", "mapsToStage": "LEARN" }
+      {
+        "id": "shape",
+        "label": "SHAPE",
+        "caption": "Frame the uncertainty.",
+        "mapsToStage": "SHAPE"
+      },
+      {
+        "id": "align",
+        "label": "ALIGN",
+        "caption": "Scan the environment.",
+        "mapsToStage": "ALIGN"
+      },
+      {
+        "id": "design",
+        "label": "DESIGN",
+        "caption": "Form emerging beliefs.",
+        "mapsToStage": "DESIGN"
+      },
+      {
+        "id": "calibrate",
+        "label": "CALIBRATE",
+        "caption": "Qualify the intelligence.",
+        "mapsToStage": "CALIBRATE"
+      },
+      {
+        "id": "activate",
+        "label": "ACTIVATE",
+        "caption": "Consider next moves.",
+        "mapsToStage": "ACTIVATE"
+      },
+      {
+        "id": "learn",
+        "label": "LEARN",
+        "caption": "Capture learnings.",
+        "mapsToStage": "LEARN"
+      }
     ]
   },
   "capabilities": [
-    { "id": "SCOUT", "label": "SCOUT", "presentInStudio": true, "description": "Future signal detection and external sensing." },
-    { "id": "QDS", "label": "QDS", "presentInStudio": true, "description": "Future qualification and evidence sufficiency layer." },
-    { "id": "DOCENTE", "label": "Docente", "presentInStudio": true, "description": "Future learning capture from observation cycles." }
+    {
+      "id": "SCOUT",
+      "label": "SCOUT",
+      "presentInStudio": true,
+      "description": "Future signal detection and external sensing."
+    },
+    {
+      "id": "QDS",
+      "label": "QDS",
+      "presentInStudio": true,
+      "description": "Future qualification and evidence sufficiency layer."
+    },
+    {
+      "id": "DOCENTE",
+      "label": "Docente",
+      "presentInStudio": true,
+      "description": "Future learning capture from observation cycles."
+    }
   ],
   "metrics": [
-    { "id": "active-briefs", "label": "Active Briefs", "value": "7", "delta": "+2 this week", "intent": "up" },
-    { "id": "signals-tracked", "label": "Signals Tracked", "value": "23", "intent": "neutral" },
-    { "id": "beliefs-forming", "label": "Beliefs Forming", "value": "4", "intent": "up" }
+    {
+      "id": "active-briefs",
+      "label": "Active Briefs",
+      "value": "7",
+      "delta": "+2 this week",
+      "intent": "up"
+    },
+    {
+      "id": "signals-tracked",
+      "label": "Signals Tracked",
+      "value": "23",
+      "intent": "neutral"
+    },
+    {
+      "id": "beliefs-forming",
+      "label": "Beliefs Forming",
+      "value": "4",
+      "intent": "up"
+    }
   ],
   "panels": [
-    { "id": "top-signals", "kind": "insights", "title": "Top Signals", "dataRef": "observatory/top-signals" },
-    { "id": "emerging-beliefs", "kind": "insights", "title": "Emerging Beliefs", "dataRef": "observatory/emerging-beliefs" },
-    { "id": "environment-map", "kind": "visualization", "title": "Environment Map", "dataRef": "observatory/environment-map" },
-    { "id": "recent", "kind": "recent-briefs", "title": "Recent Briefs", "dataRef": "briefs" }
+    {
+      "id": "top-signals",
+      "kind": "insights",
+      "title": "Top Signals",
+      "dataRef": "observatory/top-signals"
+    },
+    {
+      "id": "emerging-beliefs",
+      "kind": "insights",
+      "title": "Emerging Beliefs",
+      "dataRef": "observatory/emerging-beliefs"
+    },
+    {
+      "id": "environment-map",
+      "kind": "visualization",
+      "title": "Environment Map",
+      "dataRef": "observatory/environment-map"
+    },
+    {
+      "id": "recent",
+      "kind": "recent-briefs",
+      "title": "Recent Briefs",
+      "dataRef": "briefs"
+    }
   ],
   "integrationSlots": [
-    { "id": "scout-signals", "capability": "SCOUT", "status": "placeholder", "label": "SCOUT Signal Detection", "description": "Future SCOUT integration will detect and cluster external signals." },
-    { "id": "qds-qualification", "capability": "QDS", "status": "placeholder", "label": "QDS Evidence Qualification", "description": "Future QDS will qualify evidence sufficiency before belief commitment." },
-    { "id": "docente-learning", "capability": "DOCENTE", "status": "placeholder", "label": "Docente Learning Capture", "description": "Observation outputs will become future learning inputs." }
-  ]
+    {
+      "id": "scout-signals",
+      "capability": "SCOUT",
+      "status": "placeholder",
+      "label": "SCOUT Signal Detection",
+      "description": "Future SCOUT integration will detect and cluster external signals."
+    },
+    {
+      "id": "qds-qualification",
+      "capability": "QDS",
+      "status": "placeholder",
+      "label": "QDS Evidence Qualification",
+      "description": "Future QDS will qualify evidence sufficiency before belief commitment."
+    },
+    {
+      "id": "docente-learning",
+      "capability": "DOCENTE",
+      "status": "placeholder",
+      "label": "Docente Learning Capture",
+      "description": "Observation outputs will become future learning inputs."
+    }
+  ],
+  "useCases": [
+    "Scanning uncertainty",
+    "Detecting emerging signals",
+    "Forming candidate belief"
+  ],
+  "exampleBriefs": [
+    "Market Expansion Scan",
+    "Pricing Pressure Analysis"
+  ],
+  "loopPreview": "Signal \u2192 Candidate Belief \u2192 Brief",
+  "recommendedStart": true,
+  "recommendedStartLabel": "Common starting point"
 }
