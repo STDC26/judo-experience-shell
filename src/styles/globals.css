@@ -1,5 +1,6 @@
 @import './tokens.css';
 @import './shell.css';
+@import './choose-studio.css';
 
 *, *::before, *::after {
   box-sizing: border-box;

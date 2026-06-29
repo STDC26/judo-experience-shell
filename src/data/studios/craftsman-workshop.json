@@ -9,35 +9,126 @@
     "Designing practical options before commitment",
     "Testing assumptions through visible artifacts"
   ],
-  "accent": { "primary": "#B88A5A", "soft": "rgba(184,138,90,0.12)" },
+  "accent": {
+    "primary": "#B88A5A",
+    "soft": "rgba(184,138,90,0.12)"
+  },
   "maturity": "detailed",
   "heroImageRef": "craftsman-workshop-hero",
   "workflow": {
     "steps": [
-      { "id": "ideate", "label": "IDEATE", "caption": "Generate viable strategic options from the brief." },
-      { "id": "design", "label": "DESIGN", "caption": "Shape the option into an executable concept.", "mapsToStage": "DESIGN" },
-      { "id": "prototype", "label": "PROTOTYPE", "caption": "Represent the concept as a lightweight artifact." },
-      { "id": "evaluate", "label": "EVALUATE", "caption": "Pressure-test fit, feasibility, and risk." },
-      { "id": "refine", "label": "REFINE", "caption": "Improve the artifact before decision review." }
+      {
+        "id": "ideate",
+        "label": "IDEATE",
+        "caption": "Generate viable strategic options from the brief."
+      },
+      {
+        "id": "design",
+        "label": "DESIGN",
+        "caption": "Shape the option into an executable concept.",
+        "mapsToStage": "DESIGN"
+      },
+      {
+        "id": "prototype",
+        "label": "PROTOTYPE",
+        "caption": "Represent the concept as a lightweight artifact."
+      },
+      {
+        "id": "evaluate",
+        "label": "EVALUATE",
+        "caption": "Pressure-test fit, feasibility, and risk."
+      },
+      {
+        "id": "refine",
+        "label": "REFINE",
+        "caption": "Improve the artifact before decision review."
+      }
     ]
   },
   "capabilities": [
-    { "id": "STARDANCE", "label": "Stardance", "presentInStudio": true, "description": "Future creative orchestration for shaping experience and narrative artifacts." },
-    { "id": "QDS", "label": "QDS", "presentInStudio": true, "description": "Future qualification layer for testing assumptions and decision readiness." }
+    {
+      "id": "STARDANCE",
+      "label": "Stardance",
+      "presentInStudio": true,
+      "description": "Future creative orchestration for shaping experience and narrative artifacts."
+    },
+    {
+      "id": "QDS",
+      "label": "QDS",
+      "presentInStudio": true,
+      "description": "Future qualification layer for testing assumptions and decision readiness."
+    }
   ],
   "metrics": [
-    { "id": "active-designs", "label": "Active Designs", "value": "6", "delta": "+2 this week", "intent": "up" },
-    { "id": "prototype-artifacts", "label": "Prototype Artifacts", "value": "11", "intent": "neutral" },
-    { "id": "assumptions-tested", "label": "Assumptions Tested", "value": "14", "intent": "up" }
+    {
+      "id": "active-designs",
+      "label": "Active Designs",
+      "value": "6",
+      "delta": "+2 this week",
+      "intent": "up"
+    },
+    {
+      "id": "prototype-artifacts",
+      "label": "Prototype Artifacts",
+      "value": "11",
+      "intent": "neutral"
+    },
+    {
+      "id": "assumptions-tested",
+      "label": "Assumptions Tested",
+      "value": "14",
+      "intent": "up"
+    }
   ],
   "panels": [
-    { "id": "artifact-board", "kind": "visualization", "title": "Solution Blueprint", "dataRef": "craftsman-workshop/solution-blueprint" },
-    { "id": "active-designs", "kind": "insights", "title": "Active Designs", "dataRef": "craftsman-workshop/active-designs" },
-    { "id": "design-health", "kind": "health-gauge", "title": "Design Maturity" },
-    { "id": "recent", "kind": "recent-briefs", "title": "Recent Briefs", "dataRef": "briefs" }
+    {
+      "id": "artifact-board",
+      "kind": "visualization",
+      "title": "Solution Blueprint",
+      "dataRef": "craftsman-workshop/solution-blueprint"
+    },
+    {
+      "id": "active-designs",
+      "kind": "insights",
+      "title": "Active Designs",
+      "dataRef": "craftsman-workshop/active-designs"
+    },
+    {
+      "id": "design-health",
+      "kind": "health-gauge",
+      "title": "Design Maturity"
+    },
+    {
+      "id": "recent",
+      "kind": "recent-briefs",
+      "title": "Recent Briefs",
+      "dataRef": "briefs"
+    }
   ],
   "integrationSlots": [
-    { "id": "stardance-artifacts", "capability": "STARDANCE", "status": "placeholder", "label": "Stardance Artifact System", "description": "Narrative and experience artifact generation will integrate here." },
-    { "id": "qds-assumption-test", "capability": "QDS", "status": "placeholder", "label": "QDS Assumption Test", "description": "Assumption qualification will integrate before commitment." }
-  ]
+    {
+      "id": "stardance-artifacts",
+      "capability": "STARDANCE",
+      "status": "placeholder",
+      "label": "Stardance Artifact System",
+      "description": "Narrative and experience artifact generation will integrate here."
+    },
+    {
+      "id": "qds-assumption-test",
+      "capability": "QDS",
+      "status": "placeholder",
+      "label": "QDS Assumption Test",
+      "description": "Assumption qualification will integrate before commitment."
+    }
+  ],
+  "useCases": [
+    "Turning insight into options",
+    "Designing practical moves",
+    "Testing assumptions through artifacts"
+  ],
+  "exampleBriefs": [
+    "Prototype Options",
+    "Design Trade Study"
+  ],
+  "loopPreview": "Insight \u2192 Options \u2192 Prototype"
 }
