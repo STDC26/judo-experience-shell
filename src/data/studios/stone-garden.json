@@ -1,0 +1,43 @@
+{
+  "id": "stone-garden",
+  "name": "Stone Garden",
+  "verb": "Reflect",
+  "tagline": "Find the signal in the noise.",
+  "purpose": "Find Clarity",
+  "bestFor": [
+    "Separating meaningful patterns from operational noise",
+    "Synthesizing competing signals into clearer strategic focus",
+    "Helping leaders slow down before committing movement"
+  ],
+  "accent": { "primary": "#6B8E6F", "soft": "rgba(107,142,111,0.12)" },
+  "maturity": "detailed",
+  "heroImageRef": "stone-garden-hero",
+  "workflow": {
+    "steps": [
+      { "id": "reflect", "label": "REFLECT", "caption": "Pause long enough to see what is actually present." },
+      { "id": "explore", "label": "EXPLORE", "caption": "Consider alternate interpretations before narrowing." },
+      { "id": "synthesize", "label": "SYNTHESIZE", "caption": "Combine signals, tensions, and evidence into clearer themes." },
+      { "id": "focus", "label": "FOCUS", "caption": "Identify what matters most now." },
+      { "id": "center", "label": "CENTER", "caption": "Establish a calm, aligned view before advancing." }
+    ]
+  },
+  "capabilities": [
+    { "id": "QDS", "label": "QDS", "presentInStudio": true, "description": "Future qualification support for evidence sufficiency and confidence framing." },
+    { "id": "DOCENTE", "label": "Docente", "presentInStudio": true, "description": "Future learning layer for capturing reflection and adapting leadership judgment." }
+  ],
+  "metrics": [
+    { "id": "active-briefs", "label": "Active Briefs", "value": "5", "delta": "+1 this week", "intent": "up" },
+    { "id": "themes-emerging", "label": "Themes Emerging", "value": "8", "intent": "neutral" },
+    { "id": "focus-areas", "label": "Focus Areas", "value": "3", "intent": "neutral" }
+  ],
+  "panels": [
+    { "id": "themes", "kind": "insights", "title": "Themes Emerging", "dataRef": "stone-garden/themes" },
+    { "id": "perspective-map", "kind": "visualization", "title": "Perspective Map", "dataRef": "stone-garden/perspective-map" },
+    { "id": "clarity", "kind": "health-gauge", "title": "Clarity Status" },
+    { "id": "recent", "kind": "recent-briefs", "title": "Recent Briefs", "dataRef": "briefs" }
+  ],
+  "integrationSlots": [
+    { "id": "qds-evidence", "capability": "QDS", "status": "placeholder", "label": "QDS Evidence Check", "description": "Evidence sufficiency and qualification will integrate here." },
+    { "id": "docente-learning", "capability": "DOCENTE", "status": "placeholder", "label": "Docente Learning Capture", "description": "Reflection outputs will become future learning inputs." }
+  ]
+}

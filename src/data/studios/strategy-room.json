@@ -1,0 +1,45 @@
+{
+  "id": "strategy-room",
+  "name": "Strategy Room",
+  "verb": "Decide",
+  "tagline": "Commit with conviction.",
+  "purpose": "Commit to Movement",
+  "bestFor": [
+    "Reviewing qualified briefs before commitment",
+    "Aligning executive judgment around movement",
+    "Converting evidence, design, and readiness into authorized action"
+  ],
+  "accent": { "primary": "#7A6B96", "soft": "rgba(122,107,150,0.12)" },
+  "maturity": "structural",
+  "heroImageRef": "strategy-room-hero",
+  "workflow": {
+    "steps": [
+      { "id": "review", "label": "REVIEW", "caption": "Review the qualified brief and decision context." },
+      { "id": "challenge", "label": "CHALLENGE", "caption": "Surface unresolved risk, evidence gaps, and tradeoffs.", "mapsToStage": "CALIBRATE" },
+      { "id": "align", "label": "ALIGN", "caption": "Confirm shared intent, constraints, and authority.", "mapsToStage": "ALIGN" },
+      { "id": "commit", "label": "COMMIT", "caption": "Authorize movement when conviction is sufficient.", "mapsToStage": "ACTIVATE" },
+      { "id": "move", "label": "MOVE", "caption": "Prepare the decision for execution handoff." }
+    ]
+  },
+  "capabilities": [
+    { "id": "QDS", "label": "QDS", "presentInStudio": true, "description": "Future decision qualification and commitment readiness layer." },
+    { "id": "VMG", "label": "VMG", "presentInStudio": true, "description": "Future movement handoff from authorized decision into adaptive execution." },
+    { "id": "DOCENTE", "label": "Docente", "presentInStudio": true, "description": "Future learning capture from decision outcomes." }
+  ],
+  "metrics": [
+    { "id": "briefs-ready", "label": "Briefs Ready", "value": "3", "intent": "neutral" },
+    { "id": "commitments-pending", "label": "Commitments Pending", "value": "2", "intent": "neutral" },
+    { "id": "movement-paths", "label": "Movement Paths", "value": "4", "intent": "up" }
+  ],
+  "panels": [
+    { "id": "decision-table", "kind": "visualization", "title": "Decision Table" },
+    { "id": "commitment-readiness", "kind": "health-gauge", "title": "Commitment Readiness" },
+    { "id": "executive-notes", "kind": "insights", "title": "Executive Notes" },
+    { "id": "recent", "kind": "recent-briefs", "title": "Recent Briefs", "dataRef": "briefs" }
+  ],
+  "integrationSlots": [
+    { "id": "qds-commitment", "capability": "QDS", "status": "placeholder", "label": "QDS Commitment Gate", "description": "Decision and commitment qualification will integrate here." },
+    { "id": "vmg-execution", "capability": "VMG", "status": "placeholder", "label": "VMG Execution Handoff", "description": "Authorized movement will hand off to adaptive execution systems." },
+    { "id": "docente-learning", "capability": "DOCENTE", "status": "placeholder", "label": "Docente Decision Learning", "description": "Decision outcomes will become future learning inputs." }
+  ]
+}

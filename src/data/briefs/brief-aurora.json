@@ -1,0 +1,71 @@
+{
+  "id": "brief-aurora",
+  "title": "Project Aurora — Market Entry Intelligence",
+  "originStudio": "observatory",
+  "currentStage": "ACTIVATE",
+  "lifecycle": [
+    {
+      "stage": "SHAPE",
+      "studio": "observatory",
+      "actor": "S. Kim",
+      "timestamp": "2026-05-28T09:00:00Z",
+      "note": "Early signals detected in adjacent market segment. Three independent sources confirmed directional opportunity."
+    },
+    {
+      "stage": "ALIGN",
+      "studio": "stone-garden",
+      "actor": "A. Patel",
+      "timestamp": "2026-06-02T14:00:00Z",
+      "note": "Leadership synthesized competing signals and confirmed strategic relevance."
+    },
+    {
+      "stage": "DESIGN",
+      "studio": "craftsman-workshop",
+      "actor": "R. Torres",
+      "timestamp": "2026-06-06T10:30:00Z",
+      "note": "Three entry options designed and pressure-tested against constraints."
+    },
+    {
+      "stage": "CALIBRATE",
+      "studio": "architect-studio",
+      "actor": "P. Tan",
+      "timestamp": "2026-06-10T11:00:00Z",
+      "note": "Architecture review confirmed Option B scales without structural compromise."
+    },
+    {
+      "stage": "ACTIVATE",
+      "studio": "strategy-room",
+      "actor": "D. Reyes",
+      "timestamp": "2026-06-14T16:00:00Z",
+      "note": "Decision committed. Movement authorized with 90-day execution window."
+    }
+  ],
+  "signals": [
+    { "id": "a1", "label": "Adjacent Market Shift", "directed": true, "note": "Competitor withdrawal created positioning window." },
+    { "id": "a2", "label": "Customer Pull Signal", "directed": true, "note": "Three enterprise clients independently requested capability." },
+    { "id": "a3", "label": "Regulatory Tailwind", "directed": true, "note": "New compliance framework favors early movers." }
+  ],
+  "candidateBeliefs": [
+    { "id": "ab1", "statement": "The adjacent market window is time-bounded and structurally favorable for early entry.", "derivedFrom": ["a1", "a2", "a3"] }
+  ],
+  "evidence": [
+    { "id": "ae1", "summary": "Competitor exit confirmed via public filing and customer migration data.", "sourceLabel": "Market intelligence (demo)", "strength": "strong" },
+    { "id": "ae2", "summary": "Three enterprise RFIs received within 14 days of competitor announcement.", "sourceLabel": "Sales pipeline (demo)", "strength": "strong" },
+    { "id": "ae3", "summary": "Regulatory timeline aligns with 90-day execution window.", "sourceLabel": "Compliance review (demo)", "strength": "moderate" }
+  ],
+  "confidence": {
+    "level": "high",
+    "rationale": "Multiple independent signals converge. Evidence is strong and directionally consistent. Timing pressure is real.",
+    "isComputed": false
+  },
+  "decisionState": "accelerate",
+  "governance": {
+    "humanInCommand": true,
+    "lastActor": "D. Reyes"
+  },
+  "integrationSlots": [
+    { "id": "scout-origin", "capability": "SCOUT", "status": "placeholder", "label": "SCOUT origin", "description": "Future SCOUT will detect market signals and competitor movements." },
+    { "id": "qds-qualification", "capability": "QDS", "status": "placeholder", "label": "QDS qualification", "description": "Future QDS will qualify evidence strength and decision readiness." },
+    { "id": "stardance-alignment", "capability": "STARDANCE", "status": "placeholder", "label": "Stardance alignment", "description": "Future Stardance will choreograph stakeholder alignment." }
+  ]
+}

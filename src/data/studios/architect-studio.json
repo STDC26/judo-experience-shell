@@ -1,0 +1,45 @@
+{
+  "id": "architect-studio",
+  "name": "Architect Studio",
+  "verb": "Design",
+  "tagline": "Build systems that scale.",
+  "purpose": "Build Structure",
+  "bestFor": [
+    "Designing scalable operating structures",
+    "Mapping systems, dependencies, and leverage points",
+    "Converting strategic intent into durable architecture"
+  ],
+  "accent": { "primary": "#4A6E94", "soft": "rgba(74,110,148,0.12)" },
+  "maturity": "detailed",
+  "heroImageRef": "architect-studio-hero",
+  "workflow": {
+    "steps": [
+      { "id": "discover", "label": "DISCOVER", "caption": "Locate structural constraints, dependencies, and leverage." },
+      { "id": "define", "label": "DEFINE", "caption": "Frame the architecture problem and decision boundaries." },
+      { "id": "design", "label": "DESIGN", "caption": "Create the system structure required for advantage.", "mapsToStage": "DESIGN" },
+      { "id": "evaluate", "label": "EVALUATE", "caption": "Test resilience, scalability, and tradeoffs.", "mapsToStage": "CALIBRATE" },
+      { "id": "decide", "label": "DECIDE", "caption": "Select the structure that can carry movement.", "mapsToStage": "ACTIVATE" },
+      { "id": "deliver", "label": "DELIVER", "caption": "Prepare the architecture for execution handoff." }
+    ]
+  },
+  "capabilities": [
+    { "id": "QDS", "label": "QDS", "presentInStudio": true, "description": "Future qualification of structural tradeoffs and readiness." },
+    { "id": "DOCENTE", "label": "Docente", "presentInStudio": true, "description": "Future learning layer for capability formation and operating-model adaptation." },
+    { "id": "VMG", "label": "VMG", "presentInStudio": true, "description": "Future adaptation intelligence connection for movement from design to execution." }
+  ],
+  "metrics": [
+    { "id": "active-projects", "label": "Active Projects", "value": "4", "intent": "neutral" },
+    { "id": "systems-mapped", "label": "Systems Mapped", "value": "9", "delta": "+1 this week", "intent": "up" },
+    { "id": "decisions-pending", "label": "Decisions Pending", "value": "2", "intent": "neutral" }
+  ],
+  "panels": [
+    { "id": "system-landscape", "kind": "visualization", "title": "System Landscape", "dataRef": "architect-studio/system-landscape" },
+    { "id": "principles", "kind": "insights", "title": "Architecture Principles", "dataRef": "architect-studio/principles" },
+    { "id": "architecture-health", "kind": "health-gauge", "title": "Architecture Health" },
+    { "id": "recent-decisions", "kind": "recent-briefs", "title": "Recent Architecture Decisions", "dataRef": "briefs" }
+  ],
+  "integrationSlots": [
+    { "id": "qds-tradeoff", "capability": "QDS", "status": "placeholder", "label": "QDS Tradeoff Qualification", "description": "Tradeoff and readiness qualification will integrate here." },
+    { "id": "vmg-handoff", "capability": "VMG", "status": "placeholder", "label": "VMG Movement Handoff", "description": "Adaptive movement execution will integrate after architecture decision." }
+  ]
+}
