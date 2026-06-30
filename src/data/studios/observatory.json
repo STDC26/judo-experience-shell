@@ -157,5 +157,12 @@
   ],
   "loopPreview": "Signal \u2192 Candidate Belief \u2192 Brief",
   "recommendedStart": true,
-  "recommendedStartLabel": "Common starting point"
+  "recommendedStartLabel": "Common starting point",
+  "visual": {
+    "environmentImage": "/judo-experience-shell/studio-environments/observatory.jpg",
+    "alt": "Observatory interior with telescope overlooking a city horizon under a night sky",
+    "objectPosition": "center 30%",
+    "heroObjectPosition": "center 20%",
+    "motif": "telescope-horizon"
+  }
 }

@@ -143,5 +143,12 @@
     "Executive Decision Review"
   ],
   "loopPreview": "Evidence \u2192 Judgment \u2192 Commitment",
-  "structuralNote": "Structural \u2014 intentionally maturing"
+  "structuralNote": "Structural \u2014 intentionally maturing",
+  "visual": {
+    "environmentImage": "/judo-experience-shell/studio-environments/strategy-room.jpg",
+    "alt": "Executive strategy room with long decision table, city window view, and violet ambient light",
+    "objectPosition": "center 40%",
+    "heroObjectPosition": "center 30%",
+    "motif": "decision-table"
+  }
 }

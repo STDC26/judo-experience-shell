@@ -143,5 +143,12 @@
     "Integration Architecture",
     "Data Foundation Blueprint"
   ],
-  "loopPreview": "Intent \u2192 System \u2192 Structure"
+  "loopPreview": "Intent \u2192 System \u2192 Structure",
+  "visual": {
+    "environmentImage": "/judo-experience-shell/studio-environments/architect-studio.jpg",
+    "alt": "Architect studio with model table, structural plans, and cool blue architectural light",
+    "objectPosition": "center 35%",
+    "heroObjectPosition": "center 25%",
+    "motif": "model-table"
+  }
 }

@@ -130,5 +130,12 @@
     "Prototype Options",
     "Design Trade Study"
   ],
-  "loopPreview": "Insight \u2192 Options \u2192 Prototype"
+  "loopPreview": "Insight \u2192 Options \u2192 Prototype",
+  "visual": {
+    "environmentImage": "/judo-experience-shell/studio-environments/craftsman-workshop.jpg",
+    "alt": "Craftsman workshop interior with wooden workbench, tools, and warm amber lighting",
+    "objectPosition": "center 35%",
+    "heroObjectPosition": "center 25%",
+    "motif": "workbench"
+  }
 }
