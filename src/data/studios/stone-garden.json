@@ -131,10 +131,10 @@
   ],
   "loopPreview": "Noise \u2192 Pattern \u2192 Clarity",
   "visual": {
-    "environmentImage": "/judo-experience-shell/studio-environments/stone-garden.jpg",
-    "alt": "Zen stone garden with circular arch opening, raked sand, and calm natural light",
+    "environmentImage": "/judo-experience-shell/studio-environments/stone-garden-hero.jpg",
+    "alt": "Zen stone garden viewed through a circular moon gate with raked sand, stepping stones, and soft lantern light",
     "objectPosition": "center 40%",
-    "heroObjectPosition": "center 30%",
-    "motif": "garden-arch"
+    "heroObjectPosition": "center 35%",
+    "motif": "garden-gate"
   }
 }
