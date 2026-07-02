@@ -132,10 +132,10 @@
   ],
   "loopPreview": "Insight \u2192 Options \u2192 Prototype",
   "visual": {
-    "environmentImage": "/judo-experience-shell/studio-environments/craftsman-workshop.jpg",
-    "alt": "Craftsman workshop interior with wooden workbench, tools, and warm amber lighting",
-    "objectPosition": "center 35%",
-    "heroObjectPosition": "center 25%",
+    "environmentImage": "/judo-experience-shell/studio-environments/craftsman-workshop-hero.jpg",
+    "alt": "Craftsman workshop with wide wooden workbench, hand tools, scrolled plans, and warm window light through forest",
+    "objectPosition": "center 45%",
+    "heroObjectPosition": "center 40%",
     "motif": "workbench"
   }
 }

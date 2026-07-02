@@ -145,10 +145,10 @@
   ],
   "loopPreview": "Intent \u2192 System \u2192 Structure",
   "visual": {
-    "environmentImage": "/judo-experience-shell/studio-environments/architect-studio.jpg",
-    "alt": "Architect studio with model table, structural plans, and cool blue architectural light",
-    "objectPosition": "center 35%",
-    "heroObjectPosition": "center 25%",
-    "motif": "model-table"
+    "environmentImage": "/judo-experience-shell/studio-environments/architect-studio-hero.jpg",
+    "alt": "Bright architect studio with standing model table, white architectural models, blueprints, and daylight through floor-to-ceiling windows",
+    "objectPosition": "center 50%",
+    "heroObjectPosition": "center 45%",
+    "motif": "model-table-daylight"
   }
 }

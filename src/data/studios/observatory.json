@@ -159,10 +159,10 @@
   "recommendedStart": true,
   "recommendedStartLabel": "Common starting point",
   "visual": {
-    "environmentImage": "/judo-experience-shell/studio-environments/observatory.jpg",
-    "alt": "Observatory interior with telescope overlooking a city horizon under a night sky",
-    "objectPosition": "center 30%",
-    "heroObjectPosition": "center 20%",
+    "environmentImage": "/judo-experience-shell/studio-environments/observatory-hero.jpg",
+    "alt": "Observatory dome interior with brass telescope overlooking a city horizon under a star-filled night sky",
+    "objectPosition": "center 35%",
+    "heroObjectPosition": "center 30%",
     "motif": "telescope-horizon"
   }
 }

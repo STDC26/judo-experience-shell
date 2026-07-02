@@ -145,10 +145,10 @@
   "loopPreview": "Evidence \u2192 Judgment \u2192 Commitment",
   "structuralNote": "Structural \u2014 intentionally maturing",
   "visual": {
-    "environmentImage": "/judo-experience-shell/studio-environments/strategy-room.jpg",
-    "alt": "Executive strategy room with long decision table, city window view, and violet ambient light",
+    "environmentImage": "/judo-experience-shell/studio-environments/strategy-room-hero.jpg",
+    "alt": "Executive strategy room with round commitment table, illuminated global map wall, and city night view through windows",
     "objectPosition": "center 40%",
-    "heroObjectPosition": "center 30%",
-    "motif": "decision-table"
+    "heroObjectPosition": "center 35%",
+    "motif": "global-instrument"
   }
 }

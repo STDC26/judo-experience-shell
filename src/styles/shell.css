@@ -1,7 +1,7 @@
 /* AppShell layout */
 .app-shell {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 240px minmax(0, 1fr);
   min-height: 100vh;
 }
 
@@ -10,6 +10,7 @@
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
+  min-width: 0;
 }
 
 .app-content {
@@ -189,9 +190,11 @@
 /* Studio Workspace */
 .studio-workspace {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: minmax(0, 1fr) 280px;
   grid-template-rows: auto auto auto 1fr auto;
   min-height: calc(100vh - 48px);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .studio-hero {
@@ -208,7 +211,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.5) saturate(0.8);
+  filter: brightness(0.55) saturate(0.85);
 }
 
 .studio-hero-overlay {
@@ -216,8 +219,8 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(18,18,18,0.3) 0%,
-    rgba(18,18,18,0.6) 60%,
+    rgba(18,18,18,0.15) 0%,
+    rgba(18,18,18,0.5) 50%,
     var(--color-charcoal) 100%
   );
   z-index: 1;
