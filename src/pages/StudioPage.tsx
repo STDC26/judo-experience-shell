@@ -65,15 +65,12 @@ export function StudioPage() {
 
         {/* Workflow Rail */}
         <div className="workflow-rail">
-          {studio.workflow.steps.map((step, i) => (
-            <div key={step.id} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
-              {i > 0 && <span className="workflow-connector">→</span>}
-              <div className="workflow-step">
-                <div className="workflow-step-label" style={{ color: studio.accent.primary }}>
-                  {step.label}
-                </div>
-                <div className="workflow-step-caption">{step.caption}</div>
+          {studio.workflow.steps.map((step) => (
+            <div key={step.id} className="workflow-step">
+              <div className="workflow-step-label" style={{ color: studio.accent.primary }}>
+                {step.label}
               </div>
+              <div className="workflow-step-caption">{step.caption}</div>
             </div>
           ))}
         </div>
