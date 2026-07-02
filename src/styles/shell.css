@@ -258,15 +258,16 @@
 .workflow-rail {
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-sm);
   padding: var(--space-md) var(--space-xl);
-  overflow-x: auto;
   border-bottom: 1px solid var(--surface-border);
+  max-width: 100%;
 }
 
 .workflow-step {
-  flex: 1 0 auto;
-  min-width: 110px;
+  flex: 1 1 100px;
+  min-width: 0;
   padding: var(--space-sm) var(--space-md);
   background: var(--surface-panel);
   border: 1px solid var(--surface-border);
